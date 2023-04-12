@@ -1,0 +1,24 @@
+set terminal pdf
+set output "Metric1_node.pdf"
+set title "Throughput"
+set xlabel "Number of nodes"
+set ylabel "Throughput"
+plot "output_802.15.csv" using 1:2 with linespoints title "Throughput"
+set terminal pdf
+set output "Metric2_node.pdf"
+set title "EndtoEndDelay"
+set xlabel "Number of nodes"
+set ylabel "EndtoEndDelay"
+plot "output_802.15.csv" using 1:3 with linespoints title "EndtoEndDelay"
+set terminal pdf
+set output "Metric3_node.pdf"
+set title "DeliveryRatio"
+set xlabel "Number of nodes"
+set ylabel "DeliveryRatio"
+plot "output_802.15.csv" using 1:4 with linespoints title "DeliveryRatio"
+set terminal pdf
+set output "Metric4_node.pdf"
+set title "DropRatio"
+set xlabel "Number of nodes"
+set ylabel "DropRatio"
+plot "output_802.15.csv" using 1:5 with linespoints title "DropRatio"
